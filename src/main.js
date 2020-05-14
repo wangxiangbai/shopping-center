@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 
 import axios from "axios";
-Vue.prototype.http = axios;   //修改原型链
+Vue.prototype.http = axios;   //将axios添加到原型上
 
 import VueResource  from 'vue-resource'
 Vue.use(VueResource)

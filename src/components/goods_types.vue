@@ -26,7 +26,8 @@
 		mounted() {
 			//获取首页商品分类
 			const self = this;
-			axios.get('http://vebcoder.cn/api/getTypeone').then(
+			axios.get('http://vebcoder.cn/api/getTypeone')
+			.then(
 				function(response) {
 					self.goods_type = response.data;
 				}
